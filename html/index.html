@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ипотечный калькулятор</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../img/png-transparent-calculator-logo-numeric-keypads-calculator-electronics-rectangle-logo.png">
+</head>
+<body>
+    <div class="theme-button">
+        <button>🌙</button>
+    </div>
+    <div class="content">
+        <div class="title">
+            <h1>Ипотеный кальклятор</h1>
+        </div>
+        <div class="main-content">
+            <div class="cost-d">
+                <h2>Сумма займа</h2>
+                <input type="number" id="cost" placeholder="..." min="1">
+            </div>
+            <div class="contribution-d">
+                <h2>Первоначальный взнос</h2>
+                <input type="number" id="contribution" placeholder="..." min="1">
+            </div>
+            <div class="term-d">
+                <h2>Срок кредита</h2>
+                <input type="number" id="years" placeholder="..." min="1">
+            </div>
+            <div class="bid-d">
+                <h2>Процентаная ставка</h2>
+                <input type="number" id="annualRate" placeholder="..." min="1">
+            </div>
+            <div class="result-button">
+                <button class="result" onclick="calculate()">Рассчитать</button>
+            </div>
+            <div class="total">
+                <h1>Итог</h1>
+            </div>
+            <div class="result-span">
+                <span id="sumCredit-result-0" class="sumCredit-result-0"></span>
+                <span id="sumCredit-result"></span>
+                <span id="monthlyPayment-result-0" class="monthlyPayment-result-0"></span>
+                <span id="monthlyPayment-result"></span>
+                <span id="overpayment-result-0" class="overpayment-result-0"></span>
+                <span id="overpayment-result"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/index.js"></script>
+</html>
